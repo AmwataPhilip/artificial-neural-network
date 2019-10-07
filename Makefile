@@ -4,7 +4,7 @@
 CC := g++
 SRCDIR := src
 BUILDDIR := build
-TARGET := bin/pca
+TARGET := bin/perceptron
 
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
@@ -32,7 +32,7 @@ tester:
 
 #run
 run:
-	./bin/pca avg-rainfall-mm.csv
+	./bin/perceptron
 
 .PHONY:
 	clean
